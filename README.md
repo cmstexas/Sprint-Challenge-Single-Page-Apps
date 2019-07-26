@@ -2,7 +2,7 @@
 
 This challenge allows you to practice the concepts and techniques learned over the past Sprint and apply them in a concrete project. This Sprint explored Single Page Applications, React Router I - II, React Forms, and Hooks.
 
-## Instructions
+## Instructions ##
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -25,13 +25,23 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 - [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
+> Answer: Client side routing happens whe the route is handled internally by the Javascript that is loaded on the page. Clicking on a link results in a changed state of the application instead of a refresh of the page. The pros to using client-side routing: There is less data being processed, so it's lighter, and generally faster processing which results in a better experience for the end user. Smoother transitions are easier to implement. The downside is taht the whole application needs to be loaded on the first request, which can mean slow initial loading time. It requires more setup and SEO is less optimized. 
+
+
 - [ ] What does AJAX stand for?
-> Answer:
+> Answer: AJAX is short for asynchronous JavaScript and XML. It works on the client side and is a combinatin of many web technologies to create asynchonus web applications. It allows us to update parts of a webside without relading the whole page (eg: Facebook marketplace app). HTML, CSS, and Javascript can all be used together in AJAX.
+
+
 - [ ] What are `controlled components` in React?
-> Answer:
+> Answer: A controlled Component takes is current value through props and changes through callbaks like onChange. 
+
+
 - [ ] Name three tools/libraries for making AJAX requests.
 > Answer:
+
+-Fetch API - modern way to retrieve resources from the server. 
+-Axios - modern javascript library for making AJAX calls. Can make HTTP requets from both the browser and server.
+-jQuery - Javascript library for making asynchronous calls.
 
 
 ## Project Set Up
@@ -91,7 +101,7 @@ Add a Router to this application by using [React Router](https://reacttraining.c
 
 - [ ] Start by wrapping your `root` component in the `BrowserRouter` component.
 - [ ] Declare your 3 routes with `<Route>` components for each component created above..
-- [ ] Include `/characters`, `/locations` and `/episodes` routes.
+- [ ] Include `/character`, `/location` and `/episode` routes.
 - [ ] In your `App` component, add a [tab bar](https://react.semantic-ui.com/modules/tab/#types-basic) that will use React Routers `NavLink` components to link to your different pages.
 - [ ] Make sure to use `<Link>` component instead of `<a>` elements.
 
